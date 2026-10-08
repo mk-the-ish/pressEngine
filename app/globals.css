@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-neutral-950 text-neutral-100 antialiased min-h-screen;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+@keyframes basketballDunk {
+  0% { transform: translateY(-70px) scale(0.6); opacity: 0; }
+  35% { transform: translateY(-15px) scale(1); opacity: 1; }
+  70% { transform: translateY(45px) scale(0.9); opacity: 0.9; }
+  100% { transform: translateY(85px) scale(0.7); opacity: 0; }
+}
+
+@keyframes netSwish {
+  0% { transform: scaleX(1) scaleY(1); }
+  30% { transform: scaleX(1.35) scaleY(1.15) rotate(2deg); }
+  60% { transform: scaleX(0.85) scaleY(0.95) rotate(-2deg); }
+  100% { transform: scaleX(1) scaleY(1); }
+}
+
+.animate-dunk {
+  animation: basketballDunk 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animate-swish {
+  animation: netSwish 0.8s ease-in-out forwards;
+}
