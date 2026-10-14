@@ -150,14 +150,8 @@ my-asset-slug/
   }
 }
 
-```
-
 ---
 
 ## 📄 License
 
 MIT License. Free for open-source development and commercial use.
-
-```
-
-```
